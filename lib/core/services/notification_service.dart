@@ -124,7 +124,7 @@ class NotificationService {
         body,
         targetTime,
         _defaultDetails,
-        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
         matchDateTimeComponents: DateTimeComponents.time,
       );
     } catch (_) {
@@ -161,7 +161,7 @@ class NotificationService {
         body,
         targetTime,
         _defaultDetails,
-        androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+        androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
         matchDateTimeComponents: DateTimeComponents.time,
       );
     } catch (_) {
@@ -201,7 +201,7 @@ class NotificationService {
           'It\'s time for "$routineTitle"',
           targetTime,
           _defaultDetails,
-          androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
+          androidScheduleMode: AndroidScheduleMode.inexactAllowWhileIdle,
           matchDateTimeComponents: DateTimeComponents.dayOfWeekAndTime,
         );
       } catch (_) {
